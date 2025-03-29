@@ -1,0 +1,22 @@
+.about-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  color: var(--white);
+}
+
+.about-wrapper .content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-wrapper h2 {
+  color: var(--ptitle);
+}
+
+@media(max-width:1024px) {
+  .about-wrapper {
+    grid-template-columns: 1fr;
+  }
+}

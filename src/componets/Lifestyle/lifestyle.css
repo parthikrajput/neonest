@@ -1,0 +1,41 @@
+.lifestyle-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  color: var(--white);
+}
+
+.lifestyle-img {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.lifestyle-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.life-list h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.life-list ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 20px;
+}
+
+.life-list ul li {
+  list-style: disc;
+}
+
+@media(max-width:1024px) {
+  .lifestyle-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+}

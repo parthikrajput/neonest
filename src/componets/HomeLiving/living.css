@@ -1,0 +1,31 @@
+.living-wrapper {
+  display: grid;
+  gap: 50px;
+  grid-template-columns: 1fr 1fr;
+  color: var(--white);
+}
+
+.living-content,
+.living-content .text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.living-content .text {
+  gap: 16px;
+}
+
+.living-img {
+  height: 500px;
+}
+
+.living-img img {
+  height: 100%;
+}
+
+@media(max-width:1024px) {
+  .living-wrapper {
+    grid-template-columns: 1fr;
+  }
+}

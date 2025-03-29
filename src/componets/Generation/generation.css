@@ -1,0 +1,47 @@
+.genera-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  color: var(--white);
+}
+
+.gene-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.genes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.gene {
+  border: 1px solid var(--white);
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.gene p {
+  opacity: 0.8;
+}
+
+@media(max-width :1024px) {
+  .genera-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media(max-width :650px) {
+  .genes {
+    grid-template-columns: 1fr;
+  }
+}
